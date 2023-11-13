@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1 class="title">Wheather APP</h1>
+        <section class="container">
+            <form action="" onsubmit="return false" id="form-submit">
+                <label for="city-search">Enter Location:</label>
+                <input type="text" id="city-search">
+                <button id="btn-submit">Submit</button>
+            </form>
+        </section>
+        <section class="
+    info-container">
+            <div class="info">
+                <div class="card">
+                    <h3>City</h3>
+                    <p class="city" id="city"></p>
+                    <p class="country" id="country"></p>
+                </div>
+                <div class="card">
+                    <h3>Temperature</h3>
+                    <p class="temp" id="temp"></p>
+                    <p class="feels"><em>Feels Like</em><span id="feels"></span></span></p>
+                </div>
+                <div class="card">
+                    <h3>Condition</h3>
+                    <img src="#" alt="icon" >
+                    <p id="weather"></p>
+                </div>
+            </div>  
+        </section>
+        
+    </main>
+    <footer>
+        <p>©<span id="currentYear"></span><em>Roberto Gauna</em>
+            <a href="https://github.com/rgauna79" target="_blank">
+                <i class="fa-brands fa-github fa-lg" aria-hidden="true"></i>
+            </a>    
+        </p>
+    </footer>
+    
+</body>
+<script src="main.js"></script>
+</html>

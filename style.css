@@ -1,0 +1,145 @@
+/* Global Variables */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --high-color: #00A9FF;
+    --medium-color: #89CFF3;
+    --low-color: #A0E9FF;
+    --accent-color: #0802A3;
+    --text-color: #CDF5FD;
+    
+    --shadow: 5px 4px 12px 1px rgba(0,0,0,0.75);
+    
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background: rgb(12,1,198);
+    background: linear-gradient(274deg, rgba(12,1,198,1) 0%, rgba(0,169,255,1) 67%, rgba(2,193,232,1) 100%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+/* Main Container */
+
+.title {
+    color: var(--text-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 400px;
+    width: 500px;
+}
+
+.container {
+    border: 1px solid black;
+    box-shadow: var(--shadow);
+    background-color: var(--medium-color);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+#form-submit {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem; 
+}
+
+#city-search {
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+    flex: 1;
+}
+
+#btn-submit {
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--accent-color);
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 0.05rem;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1.1);
+}
+
+/* Info Container */
+.info-container {
+    width: 100%;
+}
+.info {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    background-color: var(--high-color);
+    color: var(--text-color);
+    border-radius: 10px;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    flex: 1;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+img {
+    height: 40px;
+    width: 40px;
+}
+
+.feels {
+    font-size: 0.8rem;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+footer > p, a {
+    
+    color: var(--text-color);
+}
+
+i, span, em {
+    padding-left: 0.3rem;
+}
+
+a:visited {
+    color: var(--text-color);   
+}
